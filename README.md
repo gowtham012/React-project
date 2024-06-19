@@ -1,4 +1,4 @@
-# Project Title
+# React - Project (Airbnb)
 In the project directory, you can run:
 
 ## npm start
