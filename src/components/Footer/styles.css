@@ -1,0 +1,85 @@
+.filter-div {
+  
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x:auto;
+  width: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  position:sticky;
+  z-index: 1000;
+  
+}
+
+.links-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  opacity: 0.7;
+  border-bottom: 1px solid var(--white);
+  min-width: 85px;
+}
+
+.links-box:hover,
+.selected-box {
+  opacity: 1;
+  border-bottom: 1px solid var(--black);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.links-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+
+.links-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--font-grey);
+}
+
+.selected-label {
+  color: var(--black);
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  border: 1px solid var(--font-grey); /* Border color */
+  border-radius: 2rem; /* Round shape */
+  background-color: var(--grey); /* Background color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow */
+  z-index: 1;
+  position: sti;
+}
+
+.arrow svg {
+  font-size: 1.5rem; /* Reduce the icon size */
+  color: var(--font-grey); /* Ensure the icon color matches the border color */
+}
+
+.arrow.left {
+  left: 10px; /* Adjust for spacing from the left */
+}
+
+.arrow.right {
+  right: 10px; /* Adjust for spacing from the right */
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .filter-div {
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+  }
+}
